@@ -3,6 +3,7 @@ const app = express();
 const cors = require('cors');
 var bodyParser = require("body-parser");
 app.use(cors({
+    origin: '*',
     methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH']
 }));
 app.use(bodyParser.urlencoded({ extended: false }));

@@ -14,7 +14,7 @@ app.get("/api/trello/task_support_notification", (req, res, next) => {
    res.sendStatus(200);
 });
 app.post("/api/trello/task_support_notification", (req, res, next) => {
-   console.log(req.body.action.data.card.id);
+   console.log(req.body.action.data.card);
    res.sendStatus(200);
 });
 app.listen(process.env.PORT || 3000, function() {

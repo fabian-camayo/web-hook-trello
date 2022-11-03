@@ -9,7 +9,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.use(express.static(__dirname + '/public/'));
-
+app.get("/api/trello/task_support_notification", (req, res, next) => {
+   console.log(req);
+   res.sendStatus(200);
+});
 app.post("/api/trello/task_support_notification", (req, res, next) => {
    console.log(req);
    res.sendStatus(200);

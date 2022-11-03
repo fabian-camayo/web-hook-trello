@@ -1,7 +1,7 @@
 {
-  "name": "go-karts-mario",
+  "name": "web-hook-trello",
   "version": "1.0.0",
-  "description": "web go karts mario",
+  "description": "web-hook-trello",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

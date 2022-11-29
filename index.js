@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.use(express.static(__dirname + '/public/'));
-app.get("/api/trello/task_support_notification", (req, res, next) => {
+app.get("/api/trello/default", (req, res, next) => {
    console.log(req);
    res.sendStatus(200);
 });
@@ -25,7 +25,7 @@ app.post("/api/trello/default", (req, res, next) => {
    console.log(req.body.action.data.card);
    res.sendStatus(200);
 });
-app.post("/api/trello/default", (req, res, next) => {
+app.post("/api/trello/task_support_notification", (req, res, next) => {
     console.log(req.body);
     console.log(req.body.action);
     console.log(req.body.action.data);

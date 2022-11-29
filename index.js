@@ -21,6 +21,14 @@ app.post("/api/trello/task_support_notification", (req, res, next) => {
    console.log(req.body.action.data.card);
    res.sendStatus(200);
 });
+app.post("/api/trello/default", (req, res, next) => {
+    console.log(req.body);
+    console.log(req.body.action);
+    console.log(req.body.action.data);
+    console.log(req.body.action.data.board);
+   console.log(req.body.action.data.card);
+   res.sendStatus(200);
+});
 app.listen(process.env.PORT || 3000, function() {
   console.log('Servidor web escuchando en el puerto');
 });
